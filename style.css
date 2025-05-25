@@ -254,45 +254,75 @@ main {
   right: -20%;
 }
 
+
 .About {
   height: 100vh;
   width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
-.gradient {
-  margin-top: 100px;
+.gradient-img2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.5;
+  z-index: -1;
+  max-width: 100%;
+  height: auto;
+}
+
+.layer-blur2 {
+  height: 0;
+  width: 30rem;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  box-shadow: 0 0 700px 15px white;
+  transform: rotate(-30deg);
+  z-index: -1;
 }
 
 .Divyansh-img {
-  display: flex;
+  position: absolute;
   border-radius: 50%;
   border: 3px solid #430081;
-  margin-top: -350px;
-  margin-left: 170px;
+  left: 15%;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Perfect vertical centering */
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
 
 .about h1 {
-  display: flex;
   position: absolute;
-  top: 120vh;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 50px;
-  right: 32%;
-}
-
-.about h2 {
-  display: flex;
-  position: absolute;
-  top: 140vh;
-  font-family: var(--font-1);
-  letter-spacing: 2px;
-  right: 45%;
+  text-align: center;
+  width: 100%;
 }
 
 .about-box {
-  display: flex;
   position: absolute;
-  top: 135vh;
-  right: 16%;
-  padding: 10rem 20rem;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 2rem;
   border: #ffffff 1px dotted;
+  width: 40%;
+  max-width: 500px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.about-box h2 {
+  position: relative;
+  font-family: var(--font-1);
+  letter-spacing: 2px;
+  margin: 0;
+  color: #e7e7e7;
+  line-height: 1.6;
 }
